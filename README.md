@@ -10,9 +10,16 @@ Main features:
   - "Smart" display content update when using framebuffer;
   - Fast vertical and horizontal lines drawing;
   - An ability to clear part of display (not only the whole display);
-  
-The image scaling feature is very useful when printing a simple logo across the entire display: 
+
+The image scaling feature is very useful when printing a simple logo across the entire display:
 if the logo fits into 14x8 pixels, then it can be scaled 6 times to 84x48, which saves 36 times memory.
 
-> Library code is C99 compliant taking into account the limitations of the SDCC compiler( - the only free 
-C comliper for STM8 available on Linux).
+> Library code is C99 compliant taking into account the limitations of the SDCC compiler( - the only free C comliper for STM8 available on Linux).
+
+### Usage
+
+To use the library in your project, just copy the source files located in its
+root directory to your project, configure the build system paths and edit
+*_conf.h, *_port.h and optionally *_font.h.
+
+> Only a single PCD8544 physical instance is supported.
